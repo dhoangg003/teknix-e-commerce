@@ -1,5 +1,6 @@
-import React from 'react'
+'use client'
 
+import React from 'react'
 import classes from './index.module.scss'
 
 interface RadioButtonProps {
@@ -18,6 +19,7 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
   groupName,
 }) => {
   const handleRadioChange = () => {
+    console.log("Radio button clicked:", value)
     onRadioChange(value)
   }
 
